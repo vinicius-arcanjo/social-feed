@@ -13,16 +13,27 @@ function Post({author, content, publishedAt}) {
         'Fala galeraa 👋',
     ])
 
-    function handleCreateNewComment() {
+    function handleCreateNewComment(event) {
         event.preventDefault()
 
         setComments([...comments, newComment])
         setNewComment('')
     }
 
+    function handleNewCommentInvalid(event) {
+        event.target.setCustomValidity('Digite um comentário')
+    }
+
     function handleNewCommentChange(event) {
+        event.target.setCustomValidity('');
         setNewComment(event.target.value)
     }
+
+    function deleteComment(commentToDelete) {
+        setComments(comments.filter(comment => comment !== commentToDelete))
+    }
+
+    const isNewCommentEmpty = newComment.trim().length === 0
 
     return (
         <article className={style.post}>
@@ -49,16 +60,23 @@ function Post({author, content, publishedAt}) {
 
             <form onSubmit={handleCreateNewComment} className={style.comments}>
                 <strong>Comentários</strong>
-                <textarea value={newComment} onChange={handleNewCommentChange} placeholder="Escreva seu comentário..."/>
+                <textarea
+                    name="comment"
+                    placeholder="Escreva seu comentário..."
+                    value={newComment}
+                    onChange={handleNewCommentChange}
+                    onInvalid={handleNewCommentInvalid}
+                    required
+                />
 
                 <footer>
-                    <button type="submit">Comentar</button>
+                    <button type="submit" disabled={isNewCommentEmpty}>Comentar</button>
                 </footer>
             </form>
 
             <div className={style.commentsList}>
                 {comments.map(item => {
-                    return <Comment key={item} content={item}/>
+                    return <Comment key={item} content={item} onDeleteComment={deleteComment}/>
                 })}
             </div>
         </article>

@@ -120,8 +120,13 @@
     transition: 0.2s;
 }
 
-.comments footer button[type="submit"]:hover {
+.comments footer button[type="submit"]:not(:disabled):hover {
     background: var(--green-300);
+}
+
+.comments footer button[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
 }
 
 .commentsList {
