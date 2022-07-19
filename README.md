@@ -3,7 +3,7 @@
 > You can access this project through the link: [Social Feed](https://social-feed-ark.vercel.app/)
 
 
-![Social Feend](https://raw.githubusercontent.com/vinicius-arcanjo/social-feed/1edaa9c4678b717f19f2d26f0fed02a1e9320999/screenshot.png)
+![Social Feed](https://raw.githubusercontent.com/vinicius-arcanjo/social-feed/1edaa9c4678b717f19f2d26f0fed02a1e9320999/screenshot.png)
 
 ## What is inside?
 
