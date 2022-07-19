@@ -13,8 +13,8 @@ function SideBar() {
 
             <div className={style.profile}>
                 <Avatar src="https://github.com/vinicius-arcanjo.png" />
-                <strong>John Doe</strong>
-                <span>@johndoe</span>
+                <strong>Vinicius Arcanjo</strong>
+                <span>@arcanjo.vini</span>
             </div>
 
             <footer>

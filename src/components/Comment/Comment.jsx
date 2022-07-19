@@ -24,7 +24,7 @@ function Comment({content, onDeleteComment}) {
                 <div className={style.commentContent}>
                     <header>
                         <div className={style.author}>
-                            <strong>John Doe</strong>
+                            <strong>Vinicius Arcanjo</strong>
                             <time title="17 de Junho às 23:00:00" dateTime="2022-05-17 23:00:00">Cerca de 1h atrás
                             </time>
                         </div>

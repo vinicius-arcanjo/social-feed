@@ -10,16 +10,16 @@ const posts = [
         id: 1,
         author: {
             avatarUrl: "https://avatars0.githubusercontent.com/u/527058?v=4",
-            name: 'John Doe',
+            name: 'Vinicius Arcanjo',
             role: 'Developer'
         },
         content: [
             {type: 'paragraph', content: 'Fala galeraa 👋'},
             {
                 type: 'paragraph',
-                content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀'
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 🚀'
             },
-            {type: 'link', content: 'jane.design/doctorcare'},
+            {type: 'link', content: 'https://github.com/vinicius-arcanjo'},
         ],
         puplishedAt: new Date('2022-05-17 23:00:00'),
     }
